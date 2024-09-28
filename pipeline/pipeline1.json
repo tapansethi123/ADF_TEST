@@ -19,6 +19,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"SourceName": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "New folder"
 		},
