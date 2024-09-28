@@ -24,6 +24,12 @@
 				"type": "string"
 			}
 		},
+		"variables": {
+			"Name": {
+				"type": "String",
+				"defaultValue": "Tapan"
+			}
+		},
 		"folder": {
 			"name": "New folder"
 		},
