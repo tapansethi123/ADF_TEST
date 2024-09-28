@@ -13,19 +13,23 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/pipeline1')]",
+			"name": "[concat(parameters('factoryName'), '/pipeline2')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Append variable1",
-						"type": "AppendVariable",
+						"name": "Set variable1",
+						"type": "SetVariable",
 						"dependsOn": [],
+						"policy": {
+							"secureOutput": false,
+							"secureInput": false
+						},
 						"userProperties": [],
 						"typeProperties": {
-							"variableName": "FileValues",
-							"value": "\"engineer\",\"igit\",\"TCS\""
+							"variableName": "Name",
+							"value": "\"Sethi\""
 						}
 					}
 				],
@@ -33,22 +37,20 @@
 					"elapsedTimeMetric": {}
 				},
 				"parameters": {
-					"FileName": {
-						"type": "string",
-						"defaultValue": "List.txt"
+					"SourceName": {
+						"type": "string"
 					}
 				},
 				"variables": {
-					"FileValues": {
-						"type": "Array",
-						"defaultValue": [
-							"tapan",
-							"ethi"
-						]
+					"Name": {
+						"type": "String",
+						"defaultValue": "Tapan"
 					}
 				},
-				"annotations": [],
-				"lastPublishTime": "2024-09-21T06:24:17Z"
+				"folder": {
+					"name": "New folder"
+				},
+				"annotations": []
 			},
 			"dependsOn": []
 		}
