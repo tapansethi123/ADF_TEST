@@ -1,0 +1,9 @@
+{
+	"name": "TestActivity",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8501cfc4-cd89-4a67-adbb-d470823a1c6b",
+		"tenantId": "eebc4db4-4690-4b13-8818-0f515297d0c3"
+	}
+}

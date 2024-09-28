@@ -1,0 +1,35 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FileValues",
+					"value": "\"engineer\",\"igit\""
+				}
+			}
+		],
+		"parameters": {
+			"FileName": {
+				"type": "string",
+				"defaultValue": "List.txt"
+			}
+		},
+		"variables": {
+			"FileValues": {
+				"type": "Array",
+				"defaultValue": [
+					"tapan",
+					"ethi"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-09-21T06:24:17Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
